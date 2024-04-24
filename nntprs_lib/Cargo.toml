@@ -1,0 +1,21 @@
+[package]
+name = "nntprs-lib"
+edition = "2021"
+authors.workspace = true
+version.workspace = true
+rust-version.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+homepage.workspace = true
+categories.workspace = true
+keywords.workspace = true
+
+[features]
+default = []
+blocking = []
+
+[dependencies]
+anyhow.workspace = true
+mail-parser = { version = "0.9.3", features = ["serde"] }
+thiserror.workspace = true

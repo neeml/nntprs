@@ -1,0 +1,55 @@
+[workspace]
+members = [
+    "nntprs_client",
+    "nntprs_demo_client",
+    "nntprs_demo_server",
+    "nntprs_lib",
+    "nntprs_server",
+]
+default-members = ["nntprs_lib", "nntprs_server", "nntprs_client"]
+resolver = "2"
+
+[workspace.package]
+authors = ["Dom Rodriguez <shymega@shymega.org.uk>"]
+categories = ["networking", "protocol", "nntp"]
+description = "An async NNTP (Network News Transfer Protocol) Rust implementation for making NNTP servers and clients."
+edition = "2021"
+homepage = "https://github.com/neeml/nntprs/wiki"
+keywords = ["nntp", "networking", "protocol"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/neeml/nntprs.git"
+rust-version = "1.65.0"
+version = "0.1.0"
+
+[workspace.dependencies]
+anyhow = { version = "1.0.82" }
+bufstream = { version = "0.1.4" }
+byteorder = { version = "1.5.0" }
+bytes = { version = "1.6.0" }
+serde = { version = "1.0.198", features = ["derive"] }
+thiserror = { version = "1.0.59" }
+tokio = { version = "1.37.0", features = ["full"] }
+tokio-rustls = { version = "0.26.0" }
+
+[profile.dev]
+lto = true
+opt-level = 3
+codegen-units = 1
+debug = true
+
+[profile.dev.package."*"]
+codegen-units = 1
+opt-level = 3
+debug = true
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+debug = false
+
+[profile.release.package."*"]
+codegen-units = 1
+opt-level = 3
+debug = false
