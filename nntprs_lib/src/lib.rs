@@ -87,4 +87,20 @@ impl<'x> NetNewsItem<'x> {
             raw: Some(raw.to_string()),
         }
     }
+
+    pub fn is_parsed(&self) -> bool {
+        self.parsed.is_some()
+    }
+
+    pub fn raw(&self) -> Option<&str> {
+        self.raw.as_deref()
+    }
+
+    pub fn news_group(&self) -> Option<&str> {
+        self.newsgroup.as_deref()
+    }
+
+    pub fn parsed(&self) -> Option<&mail_parser::Message> {
+        self.parsed.as_ref()
+    }
 }
