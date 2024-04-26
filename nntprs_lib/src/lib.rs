@@ -16,7 +16,7 @@ pub struct NewsLogin {
 #[derive(Debug, Default, Eq, PartialEq)]
 pub enum ConnectionType {
     Plain,
-    PlainStartTls,
+    StarTls,
     Tls,
     #[default]
     Unspecified,
