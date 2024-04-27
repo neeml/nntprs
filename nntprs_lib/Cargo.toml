@@ -1,5 +1,5 @@
 [package]
-name = "nntprs-lib"
+name = "nntprs"
 edition = "2021"
 authors.workspace = true
 version.workspace = true
@@ -10,6 +10,9 @@ repository.workspace = true
 homepage.workspace = true
 categories.workspace = true
 keywords.workspace = true
+
+[lib]
+name = "nntprs"
 
 [features]
 default = []
