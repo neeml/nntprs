@@ -1,8 +1,6 @@
 [workspace]
 members = [
     "nntprs_client",
-    "nntprs_demo_client",
-    "nntprs_demo_server",
     "nntprs_lib",
     "nntprs_server",
 ]
