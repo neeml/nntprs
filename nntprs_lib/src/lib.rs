@@ -63,6 +63,12 @@ impl Connection {
     }
 }
 
+impl Default for Connection {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Connection<LoginAuthenticated> {
     pub fn get_login(&self) -> Option<&NewsLogin> {
         match self.auth {
