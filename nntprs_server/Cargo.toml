@@ -13,7 +13,7 @@ keywords.workspace = true
 
 [features]
 default = []
-blocking = ["nntprs-lib/blocking"]
+blocking = ["nntprs/blocking"]
 
 [dependencies]
-nntprs-lib = { path = "../nntprs_lib" }
+nntprs = { path = "../nntprs_lib" }
