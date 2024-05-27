@@ -25,7 +25,7 @@ anyhow = { version = "1.0.86" }
 bufstream = { version = "0.1.4" }
 byteorder = { version = "1.5.0" }
 bytes = { version = "1.6.0" }
-serde = { version = "1.0.202", features = ["derive"] }
+serde = { version = "1.0.203", features = ["derive"] }
 thiserror = { version = "1.0.61" }
 tokio = { version = "1.37.0", features = ["full"] }
 tokio-rustls = { version = "0.26.0" }
