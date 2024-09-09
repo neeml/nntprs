@@ -20,5 +20,5 @@ blocking = []
 
 [dependencies]
 anyhow.workspace = true
-mail-parser = { version = "0.9.3", features = ["serde"] }
+mail-parser = { version = "0.9.4", features = ["serde"] }
 thiserror.workspace = true
