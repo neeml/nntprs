@@ -24,12 +24,24 @@ dependencies = [
 ]
 
 [[package]]
-name = "mail-parser"
-version = "0.9.4"
+name = "hashify"
+version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "93c3b9e5d8b17faf573330bbc43b37d6e918c0a3bf8a88e7d0a220ebc84af9fc"
+checksum = "5772d10fb6ad55ec11f3ec9ae4e39c626a340cf996750689d8fd54938493acf1"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "mail-parser"
+version = "0.10.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0d8f64d96d3235bb1390e3d8efd745deb66b85595ce4db431a3ddc0e841a6015"
 dependencies = [
  "encoding_rs",
+ "hashify",
  "serde",
 ]
 
